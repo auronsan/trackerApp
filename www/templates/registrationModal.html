@@ -1,0 +1,27 @@
+<ion-modal-view>
+    <div class="bar bar-header bar-assertive">
+        <h1 class="title">Registration</h1>
+        <button class="button icon ion-close-round" ng-click="closeRegModal()"></button>
+    </div>
+    <ion-content class="content has-header">
+        <form name="regForm" novalidate>
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="username" name="regUsername" ng-model="regUsername" required />
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="password" name="regPassword" ng-model="regPassword" required />
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="email" name="regEmail" ng-model="regEmail"  required/>
+                </label>
+            </div>
+            <div>
+                <p ng-show="regForm.regUsername.$error.required">* Username is required</p>
+                <p ng-show="regForm.regPassword.$error.required">* Password is required</p>
+                <p ng-show="regForm.regEmail.$error.required">* Email is required</p>
+            </div>
+        </form>
+        <button class="button button-block button-assertive" ng-disabled="regForm.$invalid" ng-click="registerUser(regUsername, regPassword, regEmail)">Register</button>
+    </ion-content>
+</ion-modal-view>

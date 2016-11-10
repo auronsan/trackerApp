@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js\mapController.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">js/</a> mapController.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">53.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">45.45% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">53.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>24/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('starter.mapController', ['ngCordova'])
+    .controller('MapCtrl', function ($scope, $ionicPlatform, $cordovaGeolocation, $filter, $http, $state, constant, dataService) {
+        $scope.isLoggedOn = window.localStorage.getItem('isLoggedOn');
+        <span class="missing-if-branch" title="else path not taken" >E</span>if ($scope.isLoggedOn == "true") {
+            $scope.loggedUserId = window.localStorage.getItem('loggedUserId');
+            $scope.accessToken = window.localStorage.getItem('accessToken');
+            $scope.isProfileExist = false;
+            $scope.updateDate = "";
+            $scope.latitude = "";
+            $scope.longitude = "";
+        } else {
+<span class="cstat-no" title="statement not covered" >            $state.go('login');</span>
+        }
+&nbsp;
+        $scope.showMap = function () {
+            var options = { timeout: 10000, enableHighAccuracy: true };
+            $cordovaGeolocation.getCurrentPosition(options).then(
+<span class="fstat-no" title="function not covered" >                function (position) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.latitude = position.coords.latitude;</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.longitude = position.coords.longitude;</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.updateDate = $filter('date')(new Date(), 'yyyy-MM-dd HH:mm:ss');</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.profile.latestLocation.lat = $scope.latitude;</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.profile.latestLocation.lng = $scope.longitude;</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.profile.latestUpdateDate = $scope.updateDate;</span>
+&nbsp;
+                    // Save profile)
+<span class="cstat-no" title="statement not covered" >                    var saveProfileResData = dataService.saveProfile($scope.profile, $scope.accessToken);</span>
+<span class="cstat-no" title="statement not covered" >                    saveProfileResData.then(<span class="fstat-no" title="function not covered" >function(resData){</span></span>
+<span class="cstat-no" title="statement not covered" >                        $scope.profile = resData;        </span>
+                    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    var mapOptions = {</span>
+                        center: latLng,
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);</span>
+&nbsp;
+                    // Wait until the map is loaded
+<span class="cstat-no" title="statement not covered" >                    google.maps.event.addListenerOnce($scope.map, 'idle', <span class="fstat-no" title="function not covered" >function () {</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        var marker = new google.maps.Marker({</span>
+                            map: $scope.map,
+                            animation: google.maps.Animation.DROP,
+                            position: latLng
+                        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        var infoWindow = new google.maps.InfoWindow({</span>
+                            content: "Here I am!"
+                        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        google.maps.event.addListener(marker, 'click', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >                            infoWindow.open($scope.map, marker)</span>
+                        });
+&nbsp;
+                    });
+                }, <span class="fstat-no" title="function not covered" >function (error) {</span>
+<span class="cstat-no" title="statement not covered" >                    console.log('Could not get location');</span>
+                });
+        }
+&nbsp;
+        // Initialize Data
+        $scope.initializeData = function (userId, accessToken) {
+            // Get logged user data
+            var getUserByIdResData = dataService.getUserById(userId, accessToken);
+            getUserByIdResData.then(function (resData) {
+                <span class="missing-if-branch" title="else path not taken" >E</span>if (resData.error == undefined) {
+                    $scope.user = resData;
+                    var getProfileByUserIdResData = dataService.getProfileByUserId(userId, accessToken);
+                    getProfileByUserIdResData.then(function (resData) {
+                        <span class="missing-if-branch" title="else path not taken" >E</span>if (resData != null) {
+                            $scope.isProfileExist = true;
+                            $scope.profile = resData;
+                        } else {
+<span class="cstat-no" title="statement not covered" >                            $scope.profile = {</span>
+                                "name": $scope.user.username,
+                                "latestLocation": {
+                                    "lat": 0,
+                                    "lng": 0
+                                },
+                                "latestUpdateDate": "",
+                                "userId": userId
+                            }
+                        }
+                        $scope.showMap();
+                    });
+                }
+            });
+        }
+&nbsp;
+        $ionicPlatform.ready(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >            $scope.initializeData($scope.loggedUserId, $scope.accessToken);</span>
+        })
+    })
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Nov 10 2016 09:24:12 GMT+0700 (SE Asia Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

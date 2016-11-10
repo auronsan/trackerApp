@@ -1,0 +1,25 @@
+<ion-view>
+    <ion-content class="content has-header">
+        <h3 class="title">
+            Profile Screen
+        </h3>
+        <div class="list">
+            <div class="item">
+                <div style="float:left">Name</div>
+                <div style="float:right">{{user.username}}</div>
+            </div>
+            <div class="item">
+                <div style="float:left">Latest Latitude</div>
+                <div style="float:right">{{profile.latestLocation.lat.toFixed(5)}}</div>
+            </div>
+            <div class="item">
+                <div style="float:left">Latest Longitude</div>
+                <div style="float:right">{{profile.latestLocation.lng.toFixed(5)}}</div>
+            </div>
+            <div class="item">
+                <div style="float:left">Latest Update Date</div>
+                <div style="float:right;font-size:12px">{{profile.latestUpdateDate}}</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

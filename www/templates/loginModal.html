@@ -1,0 +1,23 @@
+<ion-modal-view>
+    <div class="bar bar-header bar-assertive">
+        <h1 class="title">Login</h1>
+        <button class="button icon ion-close-round" ng-click="closeLoginModal()"></button>
+    </div>
+    <ion-content class="content has-header">
+        <form name="loginForm" novalidate>
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="username" name="loginUsername" ng-model="loginUsername" required />
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="password" name="loginPassword" ng-model="loginPassword" required />
+                </label>
+            </div>
+            <div>
+                <p ng-show="loginForm.loginUsername.$error.required">* Username is required</p>
+                <p ng-show="loginForm.loginPassword.$error.required">* Password is required</p>
+            </div>
+        </form>
+        <button class="button button-block button-assertive" ng-disabled="loginForm.$invalid" ng-click="login(loginUsername, loginPassword)">Login</button>
+    </ion-content>
+</ion-modal-view>

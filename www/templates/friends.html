@@ -1,0 +1,39 @@
+<ion-view>
+    <ion-content class="content has-header">
+        <h3 class="title">
+            Friends Screen
+        </h3>
+        <!--<h4>
+            Friends
+        </h4>
+        <ion-list show-reorder="true">
+            <ion-item ng-repeat="profile in friendsProfiles">
+                {{profile.name}}
+            </ion-item>
+        </ion-list>-->
+        <h4>
+            Pending Friends
+        </h4>
+        <h4>
+            Strangers
+        </h4>
+        <!--<ion-list show-reorder="true">
+            <ion-item ng-repeat="profile in strangerProfiles">
+                {{profile.name}}
+                <button ng-click="doStuff()">Click me</button>
+            </ion-item>
+        </ion-list>-->
+        <div class="list">
+            <div class="item" ng-repeat="profile in strangerProfiles" ng-click="addFriend({{profile}})">
+
+                <div style="float:left">{{profile.name}}</div>
+                <div style="float:right">
+                    <button class="icon ion-refresh">
+                        Add
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>

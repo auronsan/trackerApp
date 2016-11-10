@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js\app.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">js/</a> app.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">1.92% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/52</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">1.92% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/52</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Ionic Starter App
+&nbsp;
+// angular.module is a global place for creating, registering and retrieving Angular modules
+// 'starter' is the name of this angular module example (also set in a &lt;body&gt; attribute in index.html)
+// the 2nd parameter is an array of 'requires'
+angular.module('starter', ['ionic', 'starter.loginController', 'starter.profileController', 'starter.mapController', 'starter.friendsController', 'ngCordova'])
+    .factory('dataService', <span class="fstat-no" title="function not covered" >function($http, constant) {</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+            // Register user
+            registerUser: <span class="fstat-no" title="function not covered" >function(userData) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.put(constant.apiBaseAddress + constant.createUserApi, userData)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("Registration success");</span>
+<span class="cstat-no" title="statement not covered" >                        return response.data;</span>
+                    }, <span class="fstat-no" title="function not covered" >function(error) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("Registration failed : " + error.data.error.message);</span>
+<span class="cstat-no" title="statement not covered" >                        return error.data;</span>
+                    });
+            },
+&nbsp;
+            // Login
+            login: <span class="fstat-no" title="function not covered" >function(loginData) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.post(constant.apiBaseAddress + constant.loginApi, loginData)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("Login successful");</span>
+<span class="cstat-no" title="statement not covered" >                        return response.data;</span>
+                    }, <span class="fstat-no" title="function not covered" >function(error) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("Login failed : " + error.data.error.message)</span>
+<span class="cstat-no" title="statement not covered" >                        return error.data;</span>
+                    });
+            },
+&nbsp;
+            logout: <span class="fstat-no" title="function not covered" >function(accessToken) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.post(constant.apiBaseAddress + constant.logoutApi + "?access_token=" + $scope.accessToken)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("Logout succesful");</span>
+<span class="cstat-no" title="statement not covered" >                        return response.data;</span>
+                    }, <span class="fstat-no" title="function not covered" >function(error) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("Logout failed : " + error.data.error.message);</span>
+<span class="cstat-no" title="statement not covered" >                        return error.data;</span>
+                    });
+            },
+&nbsp;
+            // Get user by id
+            getUserById: <span class="fstat-no" title="function not covered" >function(id, accessToken) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.get(constant.apiBaseAddress + constant.getUserApi + "/" + id + "?access_token=" + accessToken)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("User retrieved");</span>
+<span class="cstat-no" title="statement not covered" >                        return response.data;</span>
+                    }, <span class="fstat-no" title="function not covered" >function(error) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log("Failed to retrieve user : " + error.data.error.message);</span>
+<span class="cstat-no" title="statement not covered" >                        return error.data;</span>
+                    });
+            },
+&nbsp;
+            saveProfile: <span class="fstat-no" title="function not covered" >function(profile, accessToken) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.put(constant.apiBaseAddress + constant.saveProfileApi + "?access_token=" + accessToken, profile)</span>
+                .then(<span class="fstat-no" title="function not covered" >function(response){</span>
+<span class="cstat-no" title="statement not covered" >                    console.log("Profile is saved");</span>
+<span class="cstat-no" title="statement not covered" >                    return response.data;</span>
+                }, <span class="fstat-no" title="function not covered" >function(error){</span>
+<span class="cstat-no" title="statement not covered" >                    console.log("Failed to save profile : " + error.data.error.message);</span>
+<span class="cstat-no" title="statement not covered" >                    return error.data;</span>
+                })
+            },
+&nbsp;
+            // Get all profiles
+            getAllProfiles: <span class="fstat-no" title="function not covered" >function(accessToken) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.get(constant.apiBaseAddress + constant.getProfileApi + "?access_token=" + accessToken)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        return response.data;</span>
+                    });
+            },
+&nbsp;
+            // Get profile by id
+            getProfileById: <span class="fstat-no" title="function not covered" >function(userId, accessToken) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.get(constant.apiBaseAddress + constant.getProfileApi + "/" + userId + "?access_token=" + accessToken)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        return response.data;</span>
+                    });
+            },
+&nbsp;
+            // Get profile by user id
+            getProfileByUserId: <span class="fstat-no" title="function not covered" >function(userId, accessToken) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.get(constant.apiBaseAddress + constant.getProfileApi + "?filter[where][userId]=" + userId + "&amp;access_token=" + accessToken)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log('Profile retrieved');</span>
+<span class="cstat-no" title="statement not covered" >                        if (response.data.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >                            return response.data[0]; </span>// return first content
+                        } else {
+<span class="cstat-no" title="statement not covered" >                            return null;</span>
+                        }
+                    }, <span class="fstat-no" title="function not covered" >function(error) {</span>
+<span class="cstat-no" title="statement not covered" >                        consoloe.log('Failed to retrieve profile :' + error.data.error.message);</span>
+<span class="cstat-no" title="statement not covered" >                        return error.data;</span>
+                    })
+            },
+&nbsp;
+            // Get stranger profiles
+            getStrangerProfiles: <span class="fstat-no" title="function not covered" >function(userId, accessToken) {</span>
+<span class="cstat-no" title="statement not covered" >                return $http.get(constant.apiBaseAddress + constant.getProfileApi + "?filter[where][userId][neq]=" + userId + "&amp;access_token=" + accessToken)</span>
+                    .then(<span class="fstat-no" title="function not covered" >function(response) {</span>
+<span class="cstat-no" title="statement not covered" >                        console.log('Profiles retrieved');</span>
+<span class="cstat-no" title="statement not covered" >                        return response.data;</span>
+                    }, <span class="fstat-no" title="function not covered" >function(error){</span>
+<span class="cstat-no" title="statement not covered" >                        console.log('Failed to retrieve profiles : ' + error.data.error.message);</span>
+<span class="cstat-no" title="statement not covered" >                        return error.data;</span>
+                    });
+            }
+        }
+    })
+&nbsp;
+    .constant(
+    "constant", {
+        // apiBaseAddress: "http://localhost:3000/api",
+        apiBaseAddress: "http://ec2-52-77-253-88.ap-southeast-1.compute.amazonaws.com:3000/api",
+        loginApi: "/Users/login",
+        logoutApi: "/Users/logout",
+        getUserApi: "/Users",
+        saveProfileApi: "/Profiles",
+        getProfileApi: "/Profiles",
+        createUserApi: "/Users",
+    })
+&nbsp;
+    .config(<span class="fstat-no" title="function not covered" >function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {</span>
+<span class="cstat-no" title="statement not covered" >        $ionicConfigProvider.tabs.position('bottom');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $urlRouterProvider.otherwise('/');</span>
+<span class="cstat-no" title="statement not covered" >        $stateProvider</span>
+            .state('login',
+            {
+                url: '/',
+                controller: 'LoginCtrl',
+                templateUrl: 'templates/login.html'
+            })
+            .state('home',
+            {
+                url: '/home',
+                templateUrl: 'templates/home.html',
+            })
+            .state('home.map', {
+                url: '/map',
+                views: {
+                    'home-map': {
+                        templateUrl: 'templates/map.html',
+                        controller: 'MapCtrl'
+                    }
+                }
+            })
+            .state('home.profile', {
+                url: '/profile',
+                views: {
+                    'home-profile': {
+                        templateUrl: 'templates/profile.html',
+                        controller: 'ProfileCtrl'
+                    }
+                }
+            })
+            .state('home.friends', {
+                url: '/friends',
+                views: {
+                    'home-friends': {
+                        templateUrl: 'templates/friends.html',
+                        controller: 'FriendsCtrl'
+                    }
+                }
+            })
+    })
+&nbsp;
+    .run(<span class="fstat-no" title="function not covered" >function($ionicPlatform) {</span>
+<span class="cstat-no" title="statement not covered" >        $ionicPlatform.ready(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (window.cordova &amp;&amp; window.cordova.plugins.Keyboard) {</span>
+                // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+                // for form inputs)
+<span class="cstat-no" title="statement not covered" >                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);</span>
+&nbsp;
+                // Don't remove this line unless you know what you are doing. It stops the viewport
+                // from snapping when text inputs are focused. Ionic handles this internally for
+                // a much nicer keyboard experience.
+<span class="cstat-no" title="statement not covered" >                cordova.plugins.Keyboard.disableScroll(true);</span>
+            }
+<span class="cstat-no" title="statement not covered" >            if (window.StatusBar) {</span>
+<span class="cstat-no" title="statement not covered" >                StatusBar.styleDefault();</span>
+            }
+        });
+    })
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Nov 10 2016 09:22:49 GMT+0700 (SE Asia Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
